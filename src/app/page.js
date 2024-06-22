@@ -1,12 +1,16 @@
-import { Button } from "keep-react";
-import Image from "next/image";
-
+import About from "@/components/About";
+import Banner from "@/components/Banner";
+import Contact from "@/components/Contact";
+import Projects from "@/components/Projects";
+import Skills from "@/components/Skills";
 export default function Home() {
   return (
     <main>
-      <h1 className="text-center font-bold text-6xl">Sahadat Hosen </h1>
-       
-
+      <Banner></Banner>
+      <About></About>
+      <Skills></Skills>
+      <Projects></Projects>
+      <Contact></Contact>
     </main>
   );
 }
