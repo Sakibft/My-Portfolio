@@ -1,26 +1,73 @@
+"use client";
 import Image from "next/image";
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
+import About from "./About";
+import { FaAngleLeft, FaGreaterThan, FaLessThan } from "react-icons/fa";
 // import sakib from ''
 const Banner = () => {
   return (
-    <div className="container mx-auto">
-      <div className="grid grid-cols-12">
+    <div className="mt-10">
+      <div className="flex flex-col-reverse md:flex-row p-4 space-x-4">
         {/* Text */}
-        <div className="col-span-6 border">
-          <h1>Welcome to my world!</h1>
-          <h2> Hi, I'm Sahadat👋 </h2>
-          <h3> I'm a Web Developer. </h3>
-          <p>
-            I'm passionate about creating dynamic and engaging online
-            experiences. With a commitment to clean code and pixel-perfect
-            designs, I ensure websites are interactive and visually captivating
-            with the use of web animations.
-          </p>
+        <div className="md:w-1/2  flex flex-col items-start">
+        {/* button */}
+          <div className="flex gap-x-4 mb-20 ">
+            <button className="border-b border-l px-3 py-1 rounded-xl">
+              Home
+            </button>
+            <button className="border-b border-l px-3 py-1 rounded-xl">
+              About
+            </button>
+            <a href="#skills">
+              <button className="border-b border-l px-3 py-1 rounded-xl">
+                Skills
+              </button>
+            </a>
+            <a href="#projects">
+              <button className="border-b border-l px-3 py-1 rounded-xl">
+                Projects
+              </button>
+            </a>
+          <a href="#contact">
+          <button className="border-b border-l px-3 py-1 rounded-xl">
+              Contact
+            </button>
+          </a>
+          </div>
+          <div>
+            <h1 className="text-xl font-semibold">Welcome to my Portfolio!</h1>
+            <h2 className="font-bold text-4xl">Hi, I'm Sahadat 👋</h2>
+            <span>
+              {/* <FaLessThan className="text-6xl" /> */}
+
+              <TypeAnimation
+                preRenderFirstString={true}
+                sequence={[
+                  500,
+                  "Web Developer", // initially rendered starting point
+                  1000,
+                  "React  Developer",
+                  500,
+                ]}
+                speed={20}
+                style={{ fontSize: "2em" }}
+                repeat={Infinity}
+              />
+              {/* <FaGreaterThan className="text-6xl" /> */}
+            </span>
+            <About></About>
+          </div>
         </div>
-        {/* image */}
-        <div className="col-span-6 border flex justify-center items-center">
-      
-           <Image src={"/sakib.jpg"} alt="haha" width="400" height="300"></Image>
+        {/* Image */}
+        <div className="md:w-1/2 flex justify-center items-center">
+          <Image
+            width={100}
+            height={50}
+            src="/sakib.jpg"
+            alt="haha"
+            layout="responsive"
+          />
         </div>
       </div>
     </div>

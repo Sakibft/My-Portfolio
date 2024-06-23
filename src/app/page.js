@@ -5,11 +5,10 @@ import Projects from "@/components/Projects";
 import Skills from "@/components/Skills";
 export default function Home() {
   return (
-    <main>
+    <main className="md:w-[1300px] mx-auto">
       <Banner></Banner>
-      <About></About>
       <Skills></Skills>
-      <Projects></Projects>
+      {/* <Projects></Projects> */}
       <Contact></Contact>
     </main>
   );
