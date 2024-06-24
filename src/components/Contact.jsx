@@ -21,7 +21,7 @@ const Contact = () => {
 
                         
                     </form>
-                    <div className='flex justify-center items-center mt-2'>
+                    <div className='flex justify-center items-center'>
 
                          <button className='border px-8 rounded-md py-1 '>Send</button>
                    
