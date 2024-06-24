@@ -24,7 +24,7 @@ const Skills = () => {
             {/* Tailwind */}
             <div className="border rounded-xl w-48 h-28 flex justify-center items-center">
               <Image
-                src={"/tailwind.png"}
+                src={"/Tailwind.png"}
                 alt="hah"
                 width={140}
                 height={10}
