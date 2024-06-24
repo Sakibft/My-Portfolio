@@ -8,7 +8,7 @@ export default function Home() {
     <main className="md:w-[1300px] mx-auto">
       <Banner></Banner>
       <Skills></Skills>
-      {/* <Projects></Projects> */}
+      <Projects></Projects>
       <Contact></Contact>
     </main>
   );

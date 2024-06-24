@@ -19,10 +19,13 @@ const Contact = () => {
                         <textarea className="w-[80%] rounded-lg   px-4 pt-2 focus:outline-none focus:ring-2 focus:ring-[#8EA7E9]/50 md:w-[60%]" type="text" placeholder="Message" name="email"/>
                     
 
-                         <button className='border px-8 rounded-md py-1'>Send</button>
                         
                     </form>
+                    <div className='flex justify-center items-center mt-2'>
+
+                         <button className='border px-8 rounded-md py-1 '>Send</button>
                    
+                    </div>
                 </div>
             </div>
         

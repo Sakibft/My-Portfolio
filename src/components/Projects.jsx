@@ -1,57 +1,197 @@
-"use client"
-import React from 'react';
-import { useKeenSlider } from "keen-slider/react"
-import "keen-slider/keen-slider.min.css"
-// import "./styles.css"
-
-const carousel = (slider) => {
-  const z = 300
-  function rotate() {
-    const deg = 360 * slider.track.details.progress
-    slider.container.style.transform = `translateZ(-${z}px) rotateY(${-deg}deg)`
-  }
-  slider.on("created", () => {
-    const deg = 360 / slider.slides.length
-    slider.slides.forEach((element, idx) => {
-      element.style.transform = `rotateY(${deg * idx}deg) translateZ(${z}px)`
-    })
-    rotate()
-  })
-  slider.on("detailsChanged", rotate)
-}
-
-
+import Image from "next/image";
+import React from "react";
 
 const Projects = () => {
-
-  const [sliderRef] = useKeenSlider(
-    {
-      loop: true,
-      selector: ".carousel__cell",
-      renderMode: "custom",
-      mode: "free-snap",
-    },
-    [carousel]
-  )
-
-
   return (
-   <div>
-       <h1 className="text-center font-bold text-4xl mt-10 mb-10">My Skills</h1>
-     <div className="wrapper border p-20">
-    <div className="scene">
-      <div className="carousel keen-slider" ref={sliderRef}>
-        <div className="carousel__cell number-slide1   ">1</div>
-        <div className="carousel__cell number-slide2">2</div>
-        <div className="carousel__cell number-slide3">3</div>
-        <div className="carousel__cell number-slide4">4</div>
-        <div className="carousel__cell number-slide5">5</div>
-        <div className="carousel__cell number-slide6">6</div>
+    <div id="projects">
+      <h1 className="text-center font-bold text-4xl mt-10 mb-10">Projects</h1>
+      <div className="flex justify-center items-center">
+        <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 ">
+          {/* 1 */}
+          <div className=" bg-base-100 w-96 shadow-xl border ">
+            <figure className="">
+              <Image
+                src={"/task.png"}
+                alt="Shoes"
+                width={700}
+                height={100}
+                className=""
+              />
+            </figure>
+            <div className=" p-4 space-y-4">
+              <h2>Tourism Management website </h2>
+
+              <div className="card-actions">
+                <a href="https://taskmania-85588.web.app" target="_blank">
+                  <button className="border px-3 py-1 rounded-lg">
+                    See now
+                  </button>
+                </a>
+                <a href="https://github.com/Sakibft/Task-Mania" target="_blank">
+                  <button className="border px-3 py-1 rounded-lg">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* 2 */}
+          <div className=" bg-base-100 w-96 shadow-xl border ">
+            <figure className="">
+              <Image
+                src={"/hom.png"}
+                alt="Shoes"
+                width={700}
+                height={100}
+                className=""
+              />
+            </figure>
+            <div className=" p-4 space-y-4">
+              <h2>Tourism Management website </h2>
+
+              <div className="card-actions">
+                <a href="https://b9a9-cc073.web.app" target="_blank">
+                  <button className="border px-3 py-1 rounded-lg">
+                    See now{" "}
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/Sakibft/Sale-Home-.-com-"
+                  target="_blank"
+                >
+                  <button className="border px-3 py-1 rounded-lg">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* 3 */}
+          <div className=" bg-base-100 w-96 shadow-xl border ">
+            <figure className="">
+              <Image
+                src={"/hero.png"}
+                alt="Shoes"
+                width={700}
+                height={100}
+                className=""
+              />
+            </figure>
+            <div className=" p-4 space-y-4">
+              <h2>The integrated testing features allow for a streamlined </h2>
+
+              <div className="card-actions">
+                <a
+                  href="https://65e5cafe6165352482bb4b94--sage-cucurucho-b46207.netlify.app"
+                  target="_blank"
+                >
+                  <button className="border px-3 py-1 rounded-lg">
+                    See now{" "}
+                  </button>
+                </a>
+                <a href="https://github.com/Sakibft/Hero" target="_blank">
+                  <button className="border px-3 py-1 rounded-lg">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* 4 */}
+          <div className=" bg-base-100 w-96 shadow-xl border ">
+            <figure className="">
+              <Image
+                src={"/hokey.png"}
+                alt="Shoes"
+                width={700}
+                height={100}
+                className=""
+              />
+            </figure>
+            <div className=" p-4 space-y-4">
+              <h2>Tourism Management website </h2>
+
+              <div className="card-actions">
+                <a
+                  href="https://sakibft.github.io/B9A3-Hockeys"
+                  target="_blank"
+                >
+                  <button className="border px-3 py-1 rounded-lg">
+                    See now{" "}
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/Sakibft/B9A3-Hockeys"
+                  target="_blank"
+                >
+                  <button className="border px-3 py-1 rounded-lg">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* 5 */}
+          <div className=" bg-base-100 w-96 shadow-xl border ">
+            <figure className="">
+              <Image
+                src={"/back.png"}
+                alt="Shoes"
+                width={700}
+                height={100}
+                className=""
+              />
+            </figure>
+            <div className=" p-4 space-y-4">
+              <h2>Backbancher traveler Group Management website </h2>
+
+              <div className="card-actions">
+                <a
+                  href="https://sakibft.github.io/B9A2-Hero-Travel-main"
+                  target="_blank"
+                >
+                  <button className="border px-3 py-1 rounded-lg">
+                    See now{" "}
+                  </button>
+                </a>
+                <a
+                  href="https://github.com/Sakibft/B9A2-Hero-Travel-main"
+                  target="_blank"
+                >
+                  <button className="border px-3 py-1 rounded-lg">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* 6 */}
+          <div className=" bg-base-100 w-96 shadow-xl border ">
+            <figure className="">
+              <Image
+                src={"/happy.png"}
+                alt="Shoes"
+                width={700}
+                height={100}
+                className=""
+              />
+            </figure>
+            <div className=" p-4 space-y-4">
+              <h2>Happy New Year Selibaration </h2>
+
+              <div className="card-actions">
+                <a
+                  href="https://sakibft.github.io/B9A1-New-Year-New-Mission"
+                  target="_blank"
+                >
+                  <button className="border px-3 py-1 rounded-lg">
+                    See now{" "}
+                  </button>
+                </a>
+
+                <a
+                  href="https://github.com/Sakibft/Travel-Hub-server-site"
+                  target="_blank"
+                >
+                  <button className="border px-3 py-1 rounded-lg">Code</button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-   </div>
   );
 };
 
-export default Projects;    
+export default Projects;
