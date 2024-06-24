@@ -37,7 +37,7 @@ const Banner = () => {
           </div>
           <div>
             <h1 className="text-xl font-semibold">Welcome to my Portfolio!</h1>
-            <h2 className="font-bold text-4xl">Hi, I'm Sahadat 👋</h2>
+            <h2 className="font-bold text-4xl">Hi, I&apos;m Sahadat 👋</h2>
             <span>
               {/* <FaLessThan className="text-6xl" /> */}
 
