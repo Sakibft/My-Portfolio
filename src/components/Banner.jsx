@@ -7,7 +7,7 @@ import { FaAngleLeft, FaGreaterThan, FaLessThan } from "react-icons/fa";
 // import sakib from ''
 const Banner = () => {
   return (
-    <div className="mt-10">
+    <div className=" pt-10 text-white">
       <div className="flex flex-col-reverse md:flex-row p-4 space-x-4">
         {/* Text */}
         <div className="md:w-1/2  flex flex-col items-start">

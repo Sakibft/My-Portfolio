@@ -3,7 +3,7 @@ import React from "react";
 
 const Skills = () => {
   return (
-    <div id="skills">
+    <div id="skills" className="text-white">
       <h1 className="text-center font-bold text-4xl mt-10 mb-10">My Skills</h1>
       {/* Front End */}
       <h1 className="text-2xl text-center mb-5 font-semibold">
