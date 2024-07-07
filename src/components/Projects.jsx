@@ -4,7 +4,7 @@ import React from "react";
 const Projects = () => {
   return (
     <div id="projects">
-      <h1 className="text-center font-bold text-4xl mt-10 mb-10">Projects</h1>
+      <h1 className="text-center font-bold text-4xl mt-10 mb-10 text-white">Projects</h1>
       <div className="flex justify-center items-center">
         <div className="grid lg:grid-cols-3 md:grid-cols-2 gap-6 ">
           {/* 1 */}
